@@ -27,7 +27,8 @@ class App extends React.Component {
     filteredResults: null,
   };
 
-  handleFormSubmit = ({ name }) => {
+  handleFormSubmit = (name) => {
+    debugger;
     this.setState({ query: name });
   };
 
