@@ -18,8 +18,8 @@ export default function App() {
   };
 
   const handleLoadingUpd = (results) => {
-    setResults(results);
     setLoadMore(false);
+    setResults(results);
   };
 
   const handleOnClick = (loadMore) => {
@@ -28,7 +28,6 @@ export default function App() {
 
   const toggleModal = (id) => {
     setShowModal((showModal) => !showModal);
-
     setFilteredResults(results.filter((result) => result.id === id)[0]);
   };
 
